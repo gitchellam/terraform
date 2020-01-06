@@ -3,6 +3,7 @@ provider "aws" {
   region = "us-west-2"
 }
 
+# data source is a piece of ReadOnly INFORMATION from PROVIDER (ex: AWS).
 data "aws_availability_zones" "all" {
 state = "available"
 }
